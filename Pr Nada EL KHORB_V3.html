@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet de Cardiologie - Pr Nada EL KHORB</title>
+
+  <style>
+    :root {
+      --primary: #b3003c;
+      --primary-light: #fbe8ee;
+      --dark: #222;
+      --text: #333;
+      --bg: #ffffff;
+      --muted: #777;
+      --card-bg: #ffffff;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .top-bar {
+      padding: 4px 8%;
+      font-size: 0.85rem;
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 8%;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 2px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary);
+      background: #fff;
+    }
+
+    .brand-text span:first-child {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--dark);
+    }
+
+    .brand-text span:last-child {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      border-bottom: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(179,0,60,0.35);
+    }
+
+    .hero {
+      padding: 40px 8% 50px;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 40px;
+      align-items: center;
+      background: radial-gradient(circle at top left, var(--primary-light), #f5f6fa 50%);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid #f1c9d7;
+      font-size: 0.8rem;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 { font-size: clamp(2rem, 2.8vw, 2.8rem); color: var(--dark); }
+    .hero h1 span { color: var(--primary); }
+    .hero-subtitle { font-size: 1rem; color: var(--muted); margin-bottom: 22px; }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 16px rgba(179,0,60,0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      padding: 11px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    section { padding: 50px 8%; }
+    .section-title { font-size: 1.5rem; color: var(--dark); }
+    .section-subtitle { color: var(--muted); margin-bottom: 24px; }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 20px 18px;
+      box-shadow: var(--shadow);
+    }
+
+    footer {
+      padding: 18px 8% 22px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: #f1f3f7;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer a { color: var(--primary); font-weight: 500; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar">
+    Consultation sur rendez-vous – Urgences cardiologiques : <strong>0767902659</strong>
+  </div>
+
+  <div class="nav">
+    <div class="brand">
+<div class="brand-text">
+        <span>Pr Nada EL KHORB </span><br>
+ 	           Professeur de cardiologie <br>
+	           Cardiologue Interventionnelle</span>    </div> 
+     <!-- Ceci est un commentaire<div class="brand-logo">  </span>--> 
+<!-- Ceci est un commentaire -->
+<img src="logo_nada.jpeg" class="brand-logo-img" alt="Logo Dr Nada El Khorb">
+<div class="brand-text">
+                  <span>البرفيسور ندى الخرب</span> <br>
+        <span>أستاذة إختصاصية في أمراض القلب و الشرايين <br> إختصاصية في قسطرة القلب </span>
+      </div>
+      
+    </div>
+
+    <nav class="nav-links">
+      <a href="#a-propos">À propos</a>
+      <a href="#domaines">Domaines</a>
+      <a href="#infos">Infos pratiques</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Prendre rendez-vous
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="hero-badge">
+      <span></span>
+      <span>Suivi personnalisé des maladies cardiovasculaires</span>
+    </div>
+
+    <h1>Cabinet de cardiologie du <span>Pr Nada EL KHORB</span></h1>
+    <p class="hero-subtitle">
+      Prévention, diagnostic et prise en charge cardiovasculaire à Fès.
+    </p>
+
+    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Demander un rendez-vous
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>Consultations et examens au cabinet</h2>
+    <p>Le cabinet est équipé pour réaliser les examens courants : ECG, Echographie cardiaque, Test d’effort, Holter ECG et Holter tensionnel (MAPA).</p>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="a-propos">
+  <h2 class="section-title">À propos</h2>
+  <p class="section-subtitle">Pr Nada EL KHORB – Cardiologue Interventionnelle</p>
+
+  <div class="card">
+    <p>
+      Cardiologue Interventionnelle installée dans la ville de Fès, la Pr Nada EL KHORB assure une prise en charge complète
+      des maladies cardiovasculaires : dépistage, suivi, traitement et éducation thérapeutique.
+      Le cabinet est idéalement situé au 1er étage, Bureau N° 2, Bled Sehrij, à côté de la Clinique El Qods et du Centre Régional d'Investissement.
+    </p>
+  </div>
+</section>
+
+<!-- DOMAINES -->
+<section id="domaines">
+  <h2 class="section-title">Domaines de compétence</h2>
+  <p class="section-subtitle">Prise en charge complète en cardiologie</p>
+
+  <div class="card">
+    <ul>
+<li>ECG de repos et d'effort  تسجيل تخطيط القلب أثناء الراحة و الجهد</li>
+<li>Echo-Doppler cardiaque trans-thoracique et trans-oesophagien  الفحص بالصدى للقلب عبر الصدر و المرئ</li>
+<li>Echo-Doppler vasculaire  الفحص بالصدى للشرايين</li>
+
+<li>Holter tensionnel  تسجيل الضغط الدموي</li>
+<li>Holter rythmique تخطيط القلب للمدى الطويل</li>
+<li>Échocardiographie de stress (Effort, Dobutamine) الفحص بالصدى للقلب أثناء الجهد</li>
+<li>IRM cardiaque  تصوير القلب بالرنين المغناطيسي</li>
+<li>Exploration du système nerveux autonome  استكشاف الجهاز العصبي اللا إرادي</li>
+<li>Coronarographie, angioplastie coronaire</li>
+<li>Cathétérisme cardiaque droit قسطرة القلب ( الأيسر و الأيمن)</li>
+<li>Réadaptation cardiaque  إعادة التأهيل الوظيفي للقلب</li>
+      <li>Hypertension artérielle</li>
+      <!-- Ceci est un commentaire <li>Cathétérisme Cardiaque</li>-->
+      <li>Maladies coronaires</li>
+      <li>Insuffisance cardiaque</li>
+       <li>Suivi post-infarctus</li>
+      <li>Bilan préopératoire</li>
+
+<!-- <li></li>-->
+    </ul>
+  </div>
+</section>
+
+<!-- INFOS PRATIQUES -->
+<section id="infos">
+  <h2 class="section-title">Informations pratiques</h2>
+
+  <div class="card">
+    <p>
+      <strong>Adresse :</strong><br>
+      Espace Bureaux EL GHALI, Bled Sehrij, Bureau N° 2, 1er étage.<br>
+      À côté de la Clinique El Qods et du Centre Régional d'Investissement, Fès.
+      <br><br>
+
+      <strong>Téléphone :</strong> 0535930161<br>
+      <strong>Téléphone :</strong> 0767902659<br>
+      <strong>Email :</strong> nadaelkhorb@gmail.com<br><br>
+
+      <strong>Horaires :</strong><br>
+      Lundi – Jeudi : 08h00 – 18h00<br>
+      Vendredi : 08h00 – 12h00 et 14h00 - 18h00<br>
+      Samedi : 08h00 – 14h00<br>
+      (Sur rendez-vous sauf pour une urgence)
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact & localisation</h2>
+
+  <div class="card">
+    <p>
+      Pour toute demande de rendez-vous ou de renseignement, contactez :<br><br>
+      📞 <strong>0535930161 ou 0767902659</strong><br>
+      ✉️ <strong>nadaelkhorb@gmail.com</strong>
+    </p>
+
+    <hr style="margin:20px 0; border:none; border-top:1px solid #ddd;">
+
+    <p>
+      <strong>Localisation :</strong><br>
+      Espace Bureaux EL GHALI, 1er étage, Bled Sehrij, Fès <br>
+      (à côté de Clinique El Qods et du Centre Régional d'Investissement)
+    </p>
+
+    <p style="margin-top:10px; color:#777;">
+      <!--
+Ceci est un commentaire
+sur plusieurs lignes. Vous pouvez intégrer une carte Google Maps ici après mise en ligne.
+-->
+    </p>
+  </div>
+</section>
+
+<footer>
+  <span>© <span id="year"></span> Cabinet de Cardiologie – Pr Nada EL KHORB.</span>
+  <a href="#accueil">Retour en haut</a>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
